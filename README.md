@@ -1,4 +1,4 @@
-![](https://github.com/shahjacobb/shahjacobb/blob/main/github%20preview.png?raw=true)
+![image](https://github.com/shahjacobb/shahjacobb/assets/83824879/af07b4e8-d168-4d83-94eb-4b59d95b91e9)
 
 Hello, I'm Shah. I'm currently a junior at Queens College in New York City, majoring in computer science. Here are the various web applications I've built which I've spent a lot of time on:
 
