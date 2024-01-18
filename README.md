@@ -1,6 +1,6 @@
 ![image](https://github.com/shahjacobb/shahjacobb/blob/main/githubbannerv2.png?raw=true)
 
-Hello, I'm Shah. I'm currently a junior at Queens College in New York City, majoring in computer science. Here are the various web applications I've built which I've spent a lot of time on:
+Hello, I'm Shah. I'm currently a junior at Queens College in New York City, majoring in computer science. Here are the various web applications I've built which I've tried to build myself. 
 
 * [**MeetupMaestro**, an event management application](https://github.com/shahjacobb/Event-Creation-App)
   * a static React app, powered entirely by an AWS serverless backend
