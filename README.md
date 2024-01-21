@@ -6,8 +6,8 @@ Hi! I'm Shah, a current junior at Queens College studying computer science. Here
   * a web app for stock tracking with time series data from the [Alpha Advantage Core U.S. Stock Data API](https://www.alphavantage.co/).
     Limited use because of API rate limiting/cost (25 per day on free tier)
 * [**MeetupMaestro**, an event management application](https://github.com/shahjacobb/Event-Creation-App)
-  * a static React app, powered entirely by an AWS serverless backend
+  * a static React app, powered by a AWS serverless backend
 * [**YellowLock**, a real-time chat messaging web application](https://github.com/shahjacobb/YellowLock)
-  * a web app built again with an AWS serverless backend and the WebSocket API for real-time, low latency messaging
+  * a web app built again with an AWS serverless backend and the WebSocket API for real-time messaging
 
     
