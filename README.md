@@ -7,7 +7,7 @@ Hi! I'm Shah, a current junior at Queens College studying computer science. Here
     Limited use because of API rate limiting/cost (25 per day on free tier)
 * [**MeetupMaestro**, an event management application](https://github.com/shahjacobb/Event-Creation-App)
   * a static React app, powered by a AWS serverless backend
-* [**YellowLock**, a real-time chat messaging web application](https://github.com/shahjacobb/YellowLock)
-  * a web app built again with an AWS serverless backend and the WebSocket API for real-time messaging
+* [**CivicHeart**, a mobile application meant to increase civic activism and propose issues to the New York City Council](https://github.com/shahjacobb/CivicHeart-Columbia-DevFest-2024)
+  * built with React Native/Expo Go with a MongoDB and express backend
 
     
