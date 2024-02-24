@@ -10,4 +10,5 @@ Hi! I'm Shah, a current junior at Queens College studying computer science. Here
 * [**CivicHeart**, a mobile application for iOS and Android meant to increase civic activism and propose issues to the New York City Council](https://github.com/shahjacobb/DevFest24-at-Columbia). Built at Columbia DevFest 2024.
   * built with React Native/Expo Go with a MongoDB and express backend
 
-    
+
+Currently building **Coeur**, a talk therapy app that uses whisper for transcription and a fine tuned [Mistral 7B](https://mistral.ai/news/announcing-mistral-7b/)
