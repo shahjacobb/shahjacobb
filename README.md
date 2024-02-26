@@ -2,7 +2,7 @@
 
 Hi! I'm Shah, a current junior at Queens College studying computer science. Here are some the projects I've worked on in the past few months :) 
 
-* [**Sante**,AI-powered transcription and progress-note taking assistant for mental health professionals]( https://github.com/shahjacobb/Sante)
+* [**Sante**, AI-powered transcription and progress-note taking assistant for mental health professionals]( https://github.com/shahjacobb/Sante)
   * using Whisper and LLama-2-70B, this lets providers transcribe recorded sessions with patients and choose between different progress note/types for their records.
 * [**CivicHeart**, a mobile application for iOS and Android meant to increase civic activism and propose issues to the New York City Council](https://github.com/shahjacobb/DevFest24-at-Columbia). Built at Columbia DevFest 2024.
   * built with React Native/Expo Go with a MongoDB and express backend
