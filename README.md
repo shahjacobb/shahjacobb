@@ -1,6 +1,6 @@
 ![image](https://github.com/shahjacobb/shahjacobb/blob/main/githubbannerv2.png?raw=true)
 
-Hi! I'm Shah, a current junior at Queens College studying computer science. 
+Hi, I'm Shah, a current junior at Queens College studying computer science. I'm interested in scalable web applications and learning about best design practices. Currently learning and building with AI + cloud. 
 
 ### What I've built recently:
 
