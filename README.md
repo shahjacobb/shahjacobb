@@ -1,4 +1,4 @@
-Hi! I'm a computer science student at Queens College, graduating in 2025, now seeking my first software engineering role. Check out my personal site [here](https://shahjacob.netlify.app/) for my portfolio work/resume.
+Hi! I'm a computer science student at Queens College, graduating in 2025, now seeking my first software engineering role. Check out my [personal site here](https://shahjacob.netlify.app/) for my project work and to view my resume.
 
 I most recently interned at [Pharmesol AI](https://www.pharmesol.com/) as a full-stack engineering intern, helping building out their backend API using [FastAPI](https://fastapi.tiangolo.com/) and integrating LLM Voice Agents using [Retell AI](https://www.retellai.com/). I also built customer dashboards in React using [Tremor.js](https://tremor.so/).
 
