@@ -6,4 +6,4 @@ I'm now most interested in backend engineering, with a focus on observability, c
 
 ### What I'm building right now:
 
-* [**YFinance Market Data Observability Platform**](https://github.com/shahjacobb/Market-Data-API-Observability-Platform) - An observability platform that tracks API latency, errors, and traces for the Yahoo Finance API. Built with OpenTelemetry, Prometheus, and Grafana, running in Docker containers.
+* [**YFinance Market Data Observability Platform**](https://github.com/shahjacobb/Market-Data-API-Observability-Platform) - A real-time observability platform that monitors requests to the YFinance API. Built with FastAPI, Prometheus for metrics collection, and Grafana for visualization. Containerized using Docker Compose.
