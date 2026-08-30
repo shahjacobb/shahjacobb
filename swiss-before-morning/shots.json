@@ -10,6 +10,10 @@
     "aspect_ratio": "21:9",
     "resolution": "1080p"
   },
+  "video_args": {
+    "resolution": "1080p",
+    "prompt_optimizer": false
+  },
   "locks": {
     "character": "SUBJECT — an elegant European woman of 27, refined features, high cheekbones, clean jawline, calm dark eyes, glossy dark-chestnut hair in a blunt shoulder-length cut with soft natural movement, groomed brows, minimal satin-neutral makeup with defined lashes and no lip gloss, straight composed posture. She wears a fitted single-breasted charcoal wool sports blazer with a sharp shoulder and nipped waist, an ivory fine-knit silk shell underneath, slim tailored black trousers cropped at the ankle, black leather loafers with a slim silver bit, a fine silver chain and small silver hoop earrings. She carries a structured black leather cabin bag.",
     "vehicle": "VEHICLE — a black compact German performance sedan, BMW M340i, gloss black paintwork with dark chrome trim and black 19-inch double-spoke wheels, warm ivory leather interior with dark open-pore wood, athletic understated proportions, showroom clean.",

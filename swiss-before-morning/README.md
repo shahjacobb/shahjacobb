@@ -39,11 +39,18 @@ campaign — the airline hands her to the car.
 pip install fal-client
 export FAL_KEY=...              # never commit this; .env is gitignored
 
-python generate.py --stage refs --dry-run     # inspect payloads, calls nothing
+python generate.py --dry-run --stage all      # inspect payloads, calls nothing
+python generate.py --preflight                # ONE image — validates key + payload
 python generate.py --stage refs --variants 3  # 3 reference frames per shot
 # --- approve every frame by eye here ---
 python generate.py --stage video
 ```
+
+Run `--preflight` before the first real session. It generates a single reference
+frame, which is the cheapest way to confirm the key, the endpoint and the argument
+names are all good before committing to sixteen calls. If an argument name is
+wrong the runner prints the endpoint, the payload keys and the API page to check,
+then stops rather than burning the rest of the run.
 
 Useful flags: `--shots 03_coat 04_matchcut` to work a subset, `--seed 12345` to
 hold a face across regenerations, `--force` to overwrite existing output.
@@ -52,12 +59,18 @@ hold a face across regenerations, `--force` to overwrite existing output.
 that continuity is decided in the stills, where a retry is cheap. Animating an
 off-model reference frame just buys an expensive off-model clip.
 
-Endpoints are configured in `shots.json` under `endpoints` — reference frames via
-Flux Pro Ultra, motion via `fal-ai/minimax/h3-max/image-to-video` (the post-trained
-H3 variant). The exact argument names for the H3 Max endpoint could not be verified
-from this environment (fal.ai is blocked by the network egress proxy here), so
-check `duration`, `resolution` and `prompt_optimizer` against the live API page
-before the first paid run — `--dry-run` prints the exact payload.
+Endpoints live in `shots.json` under `endpoints` — reference frames via Flux Pro
+Ultra, motion via `fal-ai/minimax/h3-max/image-to-video` (the post-trained H3
+variant). Motion arguments live alongside them under `video_args`, so if fal
+renames one you edit the JSON rather than the code.
+
+The H3 Max argument names could not be verified against the live API page from the
+environment this was written in — fal.ai is blocked there by the network egress
+policy (`403 CONNECT tunnel failed` on `queue.fal.run`, `fal.run`,
+`rest.alpha.fal.ai` and `v3.fal.media`). Everything else is verified end-to-end
+against a stubbed client: 8 reference calls, 8 motion calls, refs uploaded into the
+motion stage, durations summing to 44s, and idempotent re-runs. The network hop is
+the only untested link — which is what `--preflight` is for.
 
 ## Post
 

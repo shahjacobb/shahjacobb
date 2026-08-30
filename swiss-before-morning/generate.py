@@ -52,6 +52,22 @@ def download(url, dest):
     return dest
 
 
+def call(client, endpoint, payload):
+    """Wrap subscribe so a rejected payload names itself. The H3 Max argument
+    names could not be verified against the live API page from the environment
+    this was written in, so a 422 here most likely means an arg was renamed —
+    adjust `video_args` in shots.json rather than editing this file."""
+    try:
+        return client.subscribe(endpoint, arguments=payload,
+                                with_logs=True, on_queue_update=on_queue)
+    except Exception as exc:
+        print(f"\n  !! {endpoint} rejected the request: {exc}", file=sys.stderr)
+        print(f"     payload keys: {sorted(payload)}", file=sys.stderr)
+        print(f"     verify these against https://fal.ai/models/{endpoint.removeprefix('fal-ai/')}/api",
+              file=sys.stderr)
+        raise SystemExit(1)
+
+
 def on_queue(update):
     for log in getattr(update, "logs", None) or []:
         print("   ", log.get("message", ""), flush=True)
@@ -79,8 +95,7 @@ def run_refs(spec, shots, args, client):
         if args.dry_run:
             print(json.dumps(payload, indent=2)[:600] + "\n")
             continue
-        result = client.subscribe(endpoint, arguments=payload,
-                                  with_logs=True, on_queue_update=on_queue)
+        result = call(client, endpoint, payload)
         for i, img in enumerate(result["images"]):
             target = dest if i == 0 else dest.with_name(f"{shot['id']}_v{i+1}.jpg")
             print("   ->", download(img["url"], target))
@@ -108,15 +123,13 @@ def run_video(spec, shots, args, client):
             "prompt": assemble(shot, "video_prompt", locks),
             "image_url": image_url,
             "duration": shot["duration"],
-            "resolution": spec["defaults"]["resolution"],
-            "prompt_optimizer": False,
+            **spec.get("video_args", {}),
         }
         print(f"[video] {shot['id']} — {shot['title']} ({shot['duration']}s)")
         if args.dry_run:
             print(json.dumps(payload, indent=2)[:600] + "\n")
             continue
-        result = client.subscribe(endpoint, arguments=payload,
-                                  with_logs=True, on_queue_update=on_queue)
+        result = call(client, endpoint, payload)
         print("   ->", download(result["video"]["url"], dest))
 
 
@@ -128,6 +141,9 @@ def main():
     p.add_argument("--variants", type=int, default=3, help="reference frames per shot")
     p.add_argument("--force", action="store_true", help="regenerate existing outputs")
     p.add_argument("--dry-run", action="store_true", help="print payloads, call nothing")
+    p.add_argument("--preflight", action="store_true",
+                   help="generate ONE reference frame and stop — cheapest way to "
+                        "validate key, endpoint and payload before the full run")
     p.add_argument("--ref-url-prefix", default="", help="serve refs from a URL instead of uploading")
     args = p.parse_args()
 
@@ -150,6 +166,13 @@ def main():
         except ImportError:
             raise SystemExit("pip install fal-client")
         client = fal_client
+
+    if args.preflight:
+        args.variants, args.force = 1, True
+        print("[preflight] one reference frame only\n")
+        run_refs(spec, shots[:1], args, client)
+        print("\n[preflight] ok — key, endpoint and payload all accepted.")
+        return
 
     if args.stage in ("refs", "all"):
         run_refs(spec, shots, args, client)
