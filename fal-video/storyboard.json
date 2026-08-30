@@ -1,0 +1,212 @@
+{
+  "title": "SWISS x BMW M340i - The Journey Continues",
+  "fps": 24,
+  "resolution": "1920x1080",
+  "tokens": {
+    "CHAR": "THE WOMAN: early thirties, shoulder-length dark brown hair with a soft natural wave worn loose, warm olive skin, minimal makeup, small silver stud earrings, cream silk blouse, charcoal wool overcoat. Composed and understated, never performative. Her appearance is identical in every shot.",
+    "CREW": "THE FLIGHT ATTENDANT: late twenties, hair in a low neat chignon, uniform of navy jacket, white blouse and a small red neck scarf. Warm and professional, not exaggerated. Her appearance is identical in every shot.",
+    "LOOK": "Shot on ARRI Alexa, 35mm anamorphic, shallow depth of field, natural low-key dawn light, muted charcoal and ivory palette with red and warm tungsten accents, fine 35mm grain, premium commercial grade. No subtitles, no on-screen text, no captions, no watermark."
+  },
+  "card": {
+    "line1": "SWISS × BMW M340i",
+    "line2": "THE JOURNEY CONTINUES.",
+    "seconds": 2.5
+  },
+  "shots": [
+    {
+      "id": "01",
+      "slug": "ext_descent",
+      "tin": 0.0,
+      "tout": 2.2,
+      "audio": "mute",
+      "cast": [],
+      "prompt": "Exterior aerial tracking shot of a white commercial airliner with a red tail in SWISS livery, descending through heavy dark pre-dawn cloud toward Zurich. The cloud breaks and the scattered orange grid of the city appears far below. The wingtip strobe pulses. Camera holds slightly behind and above the wing, drifting slowly. Cold blue-grey light."
+    },
+    {
+      "id": "02",
+      "slug": "int_wake",
+      "tin": 2.2,
+      "tout": 4.0,
+      "audio": "mute",
+      "cast": [
+        "CHAR"
+      ],
+      "prompt": "Interior of a dimmed aircraft cabin at dawn. Close on the woman, asleep against the window. Her eyes open slowly as a wash of amber runway lights sweeps across her face from beneath the wing. She barely moves. Quiet and intimate."
+    },
+    {
+      "id": "03",
+      "slug": "espresso",
+      "tin": 4.0,
+      "tout": 9.0,
+      "audio": "dialogue",
+      "cast": [
+        "CHAR",
+        "CREW"
+      ],
+      "prompt": "Interior aircraft cabin at dawn. The flight attendant leans in and gently sets a small white espresso cup on the tray table beside the woman. The flight attendant says softly: 'Good morning. We'll be in Zurich shortly.' The woman looks up and quietly says: 'Thank you.' She adjusts the collar of her coat and turns to look out the window. Understated and real, no broad smiles. Warm cabin tungsten against cold blue window light."
+    },
+    {
+      "id": "04",
+      "slug": "door_coat",
+      "tin": 9.0,
+      "tout": 14.0,
+      "audio": "dialogue",
+      "cast": [
+        "CHAR",
+        "CREW"
+      ],
+      "prompt": "Interior at the forward aircraft door on arrival. The flight attendant holds open a charcoal wool overcoat and helps the woman into it, while a second uniformed crew member stands beside them holding her small cabin bag. Close on hands at the collar and the small settling gesture of the coat onto her shoulders. The flight attendant says: 'Welcome to Zurich.' The woman replies: 'Thank you. It was lovely.' Camera stays tight on faces and hands. Natural, warm, restrained."
+    },
+    {
+      "id": "05",
+      "slug": "jetbridge",
+      "tin": 14.0,
+      "tout": 16.6,
+      "audio": "mute",
+      "cast": [
+        "CHAR"
+      ],
+      "prompt": "The woman walks away from camera down a jet bridge in cool grey morning light, coat on, cabin bag in hand. The cabin crew remain standing in the aircraft doorway in the background, framed and softly out of focus behind her. Slow dolly follow. Quiet."
+    },
+    {
+      "id": "06",
+      "slug": "beacon",
+      "tin": 16.6,
+      "tout": 18.0,
+      "audio": "mute",
+      "cast": [],
+      "prompt": "Extreme close-up: the red anti-collision beacon on the belly of an airliner pulsing rhythmically against wet tarmac and dark pre-dawn sky. The red light sits dead centre of frame, slightly soft, rain haze around it, filling roughly one fifth of the frame height. Locked-off camera, steady pulse, no camera movement."
+    },
+    {
+      "id": "07",
+      "slug": "taillight",
+      "tin": 18.0,
+      "tout": 19.2,
+      "audio": "mute",
+      "cast": [],
+      "prompt": "Extreme close-up: the red LED taillight of a black BMW M340i glowing dead centre of frame, filling roughly one fifth of the frame height, in the same position, scale and softness as a pulsing aircraft beacon. Wet asphalt reflections beneath, rain haze. Locked-off camera, then a very slow pull back beginning to reveal black bodywork."
+    },
+    {
+      "id": "08",
+      "slug": "arrivals_greet",
+      "tin": 19.2,
+      "tout": 21.0,
+      "audio": "mute",
+      "cast": [
+        "CHAR"
+      ],
+      "prompt": "Zurich airport arrivals hall, early morning, sparse travellers. A sharply dressed airport host in a dark suit steps forward to greet the woman with a small courteous nod and takes her cabin bag from her hand. Clean modern Swiss architecture, cool daylight. Understated professional warmth."
+    },
+    {
+      "id": "09",
+      "slug": "canopy_key",
+      "tin": 21.0,
+      "tout": 23.0,
+      "audio": "mute",
+      "cast": [
+        "CHAR"
+      ],
+      "prompt": "Beneath a wet terminal canopy at Zurich airport, rain falling beyond the edge of the roof. The suited host closes the trunk of a black BMW M340i and hands a car key fob to the woman. Close on the key passing between their hands, then her fingers closing around it. Reflected canopy lights on wet ground."
+    },
+    {
+      "id": "10",
+      "slug": "enter_car",
+      "tin": 23.0,
+      "tout": 26.0,
+      "audio": "mute",
+      "cast": [
+        "CHAR"
+      ],
+      "prompt": "The woman settles into the warm ivory leather driver's seat of a BMW M340i and pulls the door closed. The world outside goes quiet. She exhales and settles her shoulders, hands resting in her lap for a beat. Interior lit warm ivory and amber against the cold blue morning beyond the glass. Intimate and still."
+    },
+    {
+      "id": "11",
+      "slug": "ignition",
+      "tin": 26.0,
+      "tout": 28.0,
+      "audio": "mute",
+      "cast": [
+        "CHAR"
+      ],
+      "prompt": "Interior of a BMW M340i. Her thumb presses the start button and the instrument cluster wakes. Close on her face as bands of amber runway light glide slowly across it through the windscreen, reflections travelling over her eyes. Warm and controlled."
+    },
+    {
+      "id": "12",
+      "slug": "pull_away",
+      "tin": 28.0,
+      "tout": 30.0,
+      "audio": "mute",
+      "cast": [],
+      "prompt": "Wide exterior: a black BMW M340i pulls smoothly away along a wet airport service road at dawn while a white airliner with a red tail taxis in parallel in the background, its beacon pulsing red. Car and aircraft move in the same direction. Low angle, spray from the tyres, cold morning light."
+    },
+    {
+      "id": "13",
+      "slug": "tunnel_entry",
+      "tin": 30.0,
+      "tout": 31.8,
+      "audio": "mute",
+      "cast": [],
+      "prompt": "A black BMW M340i enters an airport tunnel at speed. Overhead sodium lights begin to strobe rhythmically across the black bodywork. Low tracking shot from the front quarter. Rhythm and energy lifting."
+    },
+    {
+      "id": "14",
+      "slug": "hands_wheel",
+      "tin": 31.8,
+      "tout": 33.4,
+      "audio": "mute",
+      "cast": [
+        "CHAR"
+      ],
+      "prompt": "Interior of a BMW M340i with tunnel lights pulsing through the cabin. Close on the woman's hands, relaxed and precise on the leather steering wheel, then the camera tilts up to her face: a small, private, genuine smile, just for herself. Warm ivory interior, strobing amber light."
+    },
+    {
+      "id": "15",
+      "slug": "bodywork",
+      "tin": 33.4,
+      "tout": 34.8,
+      "audio": "mute",
+      "cast": [],
+      "prompt": "Abstract close detail: tunnel lights raking across the wet black bodywork of a BMW M340i, reflections stretching and snapping across the shoulder line and the wheel arch. Fast, rhythmic, graphic. No people."
+    },
+    {
+      "id": "16",
+      "slug": "lake_sunrise",
+      "tin": 34.8,
+      "tout": 36.4,
+      "audio": "mute",
+      "cast": [],
+      "prompt": "Wide aerial: a black BMW M340i on an empty lakeside road along Lake Lucerne at sunrise, mist lying on the water, first gold light touching the far peaks. The car small within a vast calm landscape, moving steadily. Serene and expansive."
+    },
+    {
+      "id": "17",
+      "slug": "alpine_bend",
+      "tin": 36.4,
+      "tout": 38.0,
+      "audio": "mute",
+      "cast": [],
+      "prompt": "A black BMW M340i takes one controlled sweeping Alpine bend, weight settling smoothly onto the outside wheels. No drift and no drama, only precision. Low tracking shot from outside the bend, morning light, snow on the peaks behind. Composed power."
+    },
+    {
+      "id": "18",
+      "slug": "hotel_arrive",
+      "tin": 38.0,
+      "tout": 40.5,
+      "audio": "mute",
+      "cast": [
+        "CHAR"
+      ],
+      "prompt": "A black BMW M340i pulls up at the entrance of an alpine hotel in Andermatt, timber and stone, morning light on snow. A doorman steps forward, recognises the woman, and opens the driver's door with a small familiar nod. Warm, welcoming, unhurried."
+    },
+    {
+      "id": "19",
+      "slug": "pause_mountains",
+      "tin": 40.5,
+      "tout": 43.0,
+      "audio": "mute",
+      "cast": [
+        "CHAR"
+      ],
+      "prompt": "The woman stands beside the open door of the black BMW M340i, one hand resting on the door frame, and pauses to look up toward the mountains, a last quiet look before going inside. The doorman waits patiently. Far above, a small faint airliner crosses the pale morning sky, its contrail catching the light. Still, warm, resolved."
+    }
+  ]
+}
